@@ -36,7 +36,7 @@ Animal* Zoo::get(){
 }
 
 Animal* Zoo::operator[](unsigned int index){
-    if(animals.size() <= index <= this->cellsCount){
+    if(animals.size() <= index && index <= this->cellsCount){
         std::cout << "Cell is empty!" << std::endl;
     }
     if(index >= cellsCount){
